@@ -6,20 +6,16 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\Post;
+
 class BlogController extends Controller
 {
     public function index()
     {
-        $posts = [
-          0 => 'Post 1',
-          1 => 'Post 2',
-          2 => 'Post 3',
-          3 => 'Post 4',
-          4 => 'Post 5'
-        ];
+        $posts = Post::all();
 
         return view('blog.index', [
-          'posts' => $posts
+            'posts' => $posts
         ]);
     }
 }
