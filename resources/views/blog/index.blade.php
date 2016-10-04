@@ -8,12 +8,28 @@
             <section>
                 <h2>{{ $post->title }}</h2>
 
-                {{ $post->content }}
-            </section>
+                <p>{{ $post->content }}</p>
 
-            <p class="text-info">
-                <small>{{ $post->created_at }}</small>
-            </p>
+                <br/>
+
+                <p><b>Tags:</b></p>
+                <ul>
+                    @foreach ($post->tags as $tag)
+                      <li>{{ $tag->name }}</li>
+                    @endforeach
+                </ul>
+
+                <h3>Comments</h3>
+
+                @foreach ($post->comments as $comment)
+                    <p>{{ $comment->name }}</p>
+                    {{ $comment->body }}
+                @endforeach
+
+                <p class="text-info">
+                    <small>{{ $post->created_at }}</small>
+                </p>
+            </section>
 
             <hr/>
         @endforeach
