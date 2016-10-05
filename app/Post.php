@@ -20,4 +20,9 @@ class Post extends Model
     {
         return $this->BelongsToMany(Tag::class, 'posts_tags');
     }
+
+    public function getTagListAttribute()
+    {
+        return $this->tags->implode('name', ', ');
+    }
 }
