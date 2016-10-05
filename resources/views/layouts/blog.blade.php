@@ -9,7 +9,7 @@
 
 	<title>Blog - Laravel</title>
 
-	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+	<link href="/css/app.css" rel="stylesheet">
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -43,7 +43,5 @@
       </div>
     </div>
   </div>
-
-	<script src="{{ asset('/js/app.js') }}"></script>
 </body>
 </html>
