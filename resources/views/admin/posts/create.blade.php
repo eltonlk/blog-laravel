@@ -2,9 +2,9 @@
 
 @section('content')
     <div class="page-header">
-        <div class="pull-right">
+        <nav class="pull-right">
             <a href="{{ route('admin.posts.index') }}" class="btn btn-default">Back</a>
-        </div>
+        </nav>
 
         <h1>Create new Post</h1>
     </div>

@@ -12,7 +12,7 @@
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-default">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">

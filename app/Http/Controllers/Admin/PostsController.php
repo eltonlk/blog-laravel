@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 use App\Http\Requests\PostRequest;
 
 use App\Post;
 use App\Tag;
 
-class PostsAdminController extends Controller
+class PostsController extends Controller
 {
     public function __construct(Post $post)
     {
